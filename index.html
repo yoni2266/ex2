@@ -1,0 +1,217 @@
+<html>
+	<head>
+		<style>
+			/*html { 
+				background: url(aion.jpg) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}*/
+			#title {
+				margin-right:10px; 
+				margin-left:10px;
+				background-color:white;
+				color:white;
+				text-align:center;
+				padding:0px;
+				opacity:0.8;
+			}
+			#subtitle {
+				background-color:eeeeee;
+				text-align:left;
+				padding:5px;
+			}
+			#content {
+				font-family:Fantasy;
+				margin-left:120px;
+				line-height:30px;
+				background-color:#eeeeee;
+				text-align:left;
+				height:1000px;
+				width:800px;
+				float:left;
+				padding:5px;	      
+			}
+			#tags {
+				font-family:Fantasy;
+				background-color:white;
+				margin-right:120px; 
+				width:250px;
+				float:left;
+				padding:10px;	 	
+				border="2px";				
+			}
+			#background {
+				width:100%;
+				height:1000px;
+				background-color:#cccccc;
+			}
+			#footer {
+				background-color:black;
+				color:white;
+				clear:both;
+				text-align:center;
+				padding:5px;	 	 
+			}
+			#bar {
+				margin-right:10px; 
+				margin-left:10px;
+				background-color:#999999;
+				padding:8px;
+			}
+			#bar2 {
+				margin-right:10px; 
+				margin-left:10px;
+				background-color:#999999;
+				padding:4px;
+			}
+			#bar3 {
+				margin-right:10px; 
+				margin-left:10px;
+				background-color:white;
+				padding:2px;
+			}
+			#info_name {
+				font-family: "Times New Roman", Georgia, Serif;
+				font-size:24px;
+				font-style:normal;
+			}
+			#info_head {
+				font-family: "Times New Roman", Georgia, Serif;
+				font-size:20px;
+				font-style:normal;
+			}
+			#info_other {
+				font-family: "Times New Roman", Georgia, Serif;
+				font-size:18px;
+				font-style:normal;
+			}
+			#info_atp {
+				font-family: "Times New Roman", Georgia, Serif;
+				font-size:24px;
+				font-style:normal;
+				padding-left:20px;
+			}
+			#Sframe {
+				padding-left:20px;
+			}
+			
+		</style>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			
+				$("#Atp").click(function(){
+					$("#info_atp").toggle(1000);
+				});
+				
+				$("#Sch").click(function(){
+					$("#Sframe").slideToggle(1500);
+				});
+				
+			});
+			
+		</script>
+		
+	</head>
+
+	<body>
+		<!---------------Title---------------->
+	
+		<div id="title">
+			<table>
+				<tr>
+					<td>
+						<img src="head_pic.jpg">
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="bar3">
+		</div>
+		<div id="bar">
+		</div>
+		<div id="bar3">
+		</div>
+		<div id="bar2">
+		</div>
+		<div id="bar3">
+		</div>
+
+		<!---------------Article Content---------------->
+		
+		<!div id="background">
+		<div id="content">
+			<p>
+				<h2 id="Atp" align="left"> &nbsp About the Profile</h2>
+				<div id="info_atp">
+							<b>Hey guys, Welcome to my site.</b><br>
+							It's glad to have a chance to practice HTML with this homework.<br>
+							Now, let's have a look at my source code, <br>
+							and I'm sure you'll be able to find out what tags I've used.<br>
+							Peace.
+				</div>
+			</p>	
+			
+			<!My Scheduel>
+			
+			<p>
+				<h2 id="Sch" align="left"> &nbsp Scheduel</h2>
+				<div id="Sframe">
+						<iframe src="scheduel.html" name="display" width="750" height="500" frameborder="0">
+						</iframe>
+				</div>
+			</p>
+			
+			<button id="JQex">
+				Press me
+			</button>
+			<div id="Process">
+			
+			</div>
+			
+		</div>
+	
+		<!---------------Profile---------------->
+		
+		<div id="tags">
+			<h2>Profile</h2>
+			<p>
+				<img src="pro_pic.jpg">
+			</p>
+			<p>
+				<font id="info_name">Ting-Yu Lin</font><br>
+				<font id="info_other">born in Changhua,Taiwan</font><br>
+				<font id="info_other">1992.04.26 - </font>
+			</p>
+			<p>
+				<font id="info_other">Changhua High School</font><br>
+				<font id="info_other">National Cheng Kung University</font>
+			</p>
+			<p>
+				<font id="info_head">Recently</font><br>
+				<ul type="circle">
+					<li><font id="info_other">CSIE, NCKU</font></li>
+					<li><font id="info_other">Comics club</font></li>
+				</ul>
+			</p>
+			<p>
+				<font id="info_head">Links</font><br><br>
+				<a href="https://www.facebook.com/tingyu.lin.10" target="_blank">
+					<img src="fb_icon.png"></a>
+				<a href="https://www.youtube.com/channel/UC3X19kb4Xu_TSJO-3h7gMAA" target="_blank">
+					<img src="youtube_icon.png"></a>
+				<a href="http://web.ncku.edu.tw/bin/home.php" target="_blank">
+					<img src="ncku_icon.jpg" target="_blank"></a>
+			</p>
+		</div>
+		<!/div>
+
+		<div id="footer">
+			Learn and Give a Shot!
+		</div>
+	</body>
+</html>
